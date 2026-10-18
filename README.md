@@ -1,8 +1,8 @@
-# Studio · Project 2 milestones
+# Lab 9 · Call and return
 
-**Week 09 · Project 2**  
-**Theme:** Hand-check one. Then automate all.  
-**Type:** Studio week
+**Week 09 · Functions**  
+**Theme:** Name the process  
+**Type:** Lesson week
 
 
 ## Demo video (required)
@@ -10,50 +10,62 @@
 Paste a link to a short video of you running this assignment (tool + code + run).
 Work without a working video link is incomplete.
 
+The video should show `average` returning a number and `printSummary` printing it.
+
 **Your demo:** _add your link here_
 
 
-## Scenario
-Check one array element by hand, then write a loop that does the same check for every element. The full prompt is in the Week 9 Homework repo.
+## What to build
 
-## Goals
-- **Monday:** ≥10 values. Print the row
-- **Wednesday:** avg / hi / lo / filter match a hand check
-- **Friday:** labeled report + README
-- **Monday night:** Canvas
+The program from class. Four scores stay in `main`. `average` returns the number. `printSummary` only prints it. `main` keeps what comes back.
+
+The homework repo adds a menu to this same program. Do not start a second program. Paste these two functions into the homework `main.cpp`, or keep going in this file and match that menu.
+
+- Declare `const int N = 4` and `int scores[N] = {80, 90, 70, 100}`.
+- Write `double average(const int a[], int n)`. The walk lives there. It returns a `double` and does not print. If `n == 0`, return `0`.
+- Write `void printSummary(double avg)`. It only prints.
+- In `main`: `double avg = average(scores, N);` then `printSummary(avg);`.
+- A bare `average(scores, N);` drops 85. `printSummary` then prints 0.
+- `main` does not walk the array.
+
+`cout` prints `85` for the value `85.0`. That is the number from class.
+
+```
+Average: 85
+```
 
 ## Starter
-`main.cpp`. Put your name and track in the header.
+
+Use `main.cpp`. Put your name in the file-top comment.
 
 ## Environment
+
 VS 2022 · **GitHub Codespaces** · Replit · library machines
 
-## Procedure
-1. Pick a track. Write the ten numbers and the filter rule
-2. Print every index and value
-3. Sweep once. Seed hi/lo from `a[0]`
-4. Hand-check one record and the totals
-5. README + short video + submit
+## Scope fence
 
-## Sample output
-```
-[0] 70
-...
-n=10 avg=78.1 hi=95 lo=60 pass=8
-```
+No classes. No globals. No menu in this repo. The menu is the homework, on this same program.
 
 ## Definition of done
-- One honest sweep, readable report
-- Filter count matches a hand check
+
+- Compiles with zero errors
+- `average` returns a `double` and does not print
+- `printSummary` only prints
+- The return is stored before it is printed
+- `main` does not walk the array
 - Repo + short demo + Canvas
 
 ## Rubric (100)
-Graded as a mini-project: it runs, it meets the prompt, output is labeled, and the GitHub repo plus demo video are there.
 
-## Scope fence
-No files or pointers. Two aligned arrays are fine if they share `N` and `i`.
+| Criterion | Pts |
+|-----------|----:|
+| Runs correctly on a supported path | 40 |
+| Meets prompt requirements | 30 |
+| Helpers have one job each | 15 |
+| GitHub + short demo video | 15 |
 
 ## Help (`/ring`)
+
 After a real try, include: goal · what you tried · exact error · screenshot/repo · OS + tool.
 
 ## Getting started
