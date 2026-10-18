@@ -10,7 +10,7 @@
 Paste a link to a short video of you running this assignment (tool + code + run).
 Work without a working video link is incomplete.
 
-The video should show `average` returning a number and `printSummary` printing it.
+The video is half the grade. Explain what `average` returns and what `printSummary` does, then show a real run.
 
 **Your demo:** _add your link here_
 
@@ -59,10 +59,8 @@ No classes. No globals. No menu in this repo. The menu is the homework, on this 
 
 | Criterion | Pts |
 |-----------|----:|
-| Runs correctly on a supported path | 40 |
-| Meets prompt requirements | 30 |
-| Helpers have one job each | 15 |
-| GitHub + short demo video | 15 |
+| Code submitted that does the work | 50 |
+| Video explanation | 50 |
 
 ## Help (`/ring`)
 
